@@ -1,0 +1,37 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Node API Project 4 API DOC",
+    "description": "API Documentation for Node API Project 4",
+    "version": "1.0.0"
+  },
+  "host": "nodeapiproject4.herokuapp.com/",
+  "basePath": "/v1",
+  "schemes": ["https"],
+  "paths": {
+    "/": {
+      "get": {
+        "summary": "Returns a nice welcome message",
+        "description": "The root route",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/users": {
+      "get": {
+        "summary": "Returns an array of user objects",
+        "description": "Returns empty if !users",
+        "produces": ["application/json"],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}
